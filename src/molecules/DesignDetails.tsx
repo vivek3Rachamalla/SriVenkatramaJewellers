@@ -47,7 +47,7 @@ const DesignDetails: React.FC = () => {
         sx={{ borderRadius: 2 }}
       >
         <img
-          src="src/assets/images/DesignBG.webp"
+          src="assets/images/DesignBG.webp"
           style={{
             width: "80%",
             height: "80%",

@@ -1,12 +1,12 @@
 import { Box, Grid2, Typography } from "@mui/material";
 
 const catlogList = [
-  { name: "KUNDHAN", imageUrl: "src/assets/images/psv1.jpg" },
-  { name: "NAKSHI", imageUrl: "src/assets/images/psv1.jpg" },
-  { name: "DEEP NAKSHI", imageUrl: "src/assets/images/psv1.jpg" },
-  { name: "CUBIC ZIRCONIA", imageUrl: "src/assets/images/psv1.jpg" },
-  { name: "DIAMOND", imageUrl: "src/assets/images/psv1.jpg" },
-  { name: "POLKI", imageUrl: "src/assets/images/psv1.jpg" },
+  { name: "KUNDHAN", imageUrl: "assets/images/psv1.jpg" },
+  { name: "NAKSHI", imageUrl: "assets/images/psv1.jpg" },
+  { name: "DEEP NAKSHI", imageUrl: "sassets/images/psv1.jpg" },
+  { name: "CUBIC ZIRCONIA", imageUrl: "assets/images/psv1.jpg" },
+  { name: "DIAMOND", imageUrl: "assets/images/psv1.jpg" },
+  { name: "POLKI", imageUrl: "assets/images/psv1.jpg" },
 ];
 
 const CatlogHomeMenu: React.FC = () => {
