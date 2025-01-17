@@ -38,38 +38,55 @@ const detailsBottm = [
 
 const DesignDetails: React.FC = () => {
   return (
-    <Grid2 container direction="column">
+    <Grid2 container direction="column" spacing={2}>
       <Grid2
         container
-        size={{ xs: 12, sm: 5 }}
+        size={12}
         justifyContent="center"
         alignItems="center"
         sx={{ borderRadius: 2 }}
       >
-        <img
-          src="assets/images/DesignBG.webp"
-          style={{
-            width: "80%",
-            height: "80%",
-            borderRadius: "8px",
-            margin: "8px",
-            objectFit: "cover",
-          }}
-        />
+        <Grid2 size={{ xs: 12, sm: 6 }}>
+          <img
+            src="assets/images/DesignBG.webp"
+            style={{
+              width: "80%",
+              height: "80%",
+              borderRadius: "8px",
+              margin: "8px",
+              objectFit: "cover",
+            }}
+          />
+        </Grid2>
+        <Grid2 size={{ xs: 12, sm: 6 }}>
+          <List>
+            {detailsLeft.map(({ primary, secondary }) => (
+              <ListItem>
+                <ListItemText
+                  primary={primary}
+                  secondary={secondary}
+                  sx={{
+                    "& .MuiListItemText-primary": { color: "#000000" },
+                    "& .MuiListItemText-secondary": { color: "#000000" },
+                  }}
+                />
+              </ListItem>
+            ))}
+          </List>
+        </Grid2>
       </Grid2>
-      <Grid2 size={{ xs: 12, sm: 5 }}>
-        <List>
-          {detailsLeft.map(({ primary, secondary }) => (
-            <ListItem>
-              <ListItemText primary={primary} secondary={secondary} />
-            </ListItem>
-          ))}
-        </List>
-      </Grid2>
+
       <Grid2 size={12}>
         {detailsBottm.map(({ primary, secondary }) => (
           <ListItem>
-            <ListItemText primary={primary} secondary={secondary} />
+            <ListItemText
+              primary={primary}
+              secondary={secondary}
+              sx={{
+                "& .MuiListItemText-primary": { color: "#000000" },
+                "& .MuiListItemText-secondary": { color: "#000000" },
+              }}
+            />
           </ListItem>
         ))}
       </Grid2>

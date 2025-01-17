@@ -21,76 +21,92 @@ const Footer: React.FC = () => {
       <Grid2 container spacing={2}>
         <Grid2
           container
-          direction="column"
-          size={{ xs: 12, sm: 4 }}
           spacing={0.5}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          size={{ xs: 12, md: 4 }}
         >
-          <img
-            src="assets/images/logoName.png"
-            alt="Company logo"
-            style={{ maxWidth: "100%", height: "auto", marginBottom: "16px" }}
-          />
-
-          <Typography variant="body2">
-            Our family has been in the jewelry business for over 20 years,
-            offering a diverse variety of designs and a wide range of
-            customization options to suit every customer's unique preferences.
-          </Typography>
-          <Grid2
-            container
-            spacing={2}
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <InstagramIcon
-              fontSize="large"
-              sx={{
-                bgcolor: "#fff",
-                color: "#777777",
-                borderRadius: 2,
-                ":hover": {
-                  bgcolor: "#c29958",
-                  color: "#fff",
-                },
-              }}
+          <Grid2 size={12}>
+            <img
+              src="assets/images/logoName.png"
+              alt="Company logo"
+              style={{ maxWidth: "100%", height: "auto", marginBottom: "16px" }}
             />
-            <YouTubeIcon
-              fontSize="large"
-              sx={{
-                bgcolor: "#fff",
-                color: "#777777",
-                borderRadius: 2,
-                ":hover": {
-                  bgcolor: "#c29958",
-                  color: "#fff",
-                },
-              }}
-            />
-            <WhatsAppIcon
-              fontSize="large"
-              sx={{
-                bgcolor: "#fff",
-                color: "#777777",
-                borderRadius: 2,
-                ":hover": {
-                  bgcolor: "#c29958",
-                  color: "#fff",
-                },
-              }}
-            />
+          </Grid2>
+          <Grid2 size={12}>
+            <Typography variant="body2">
+              Our family has been in the jewelry business for over 20 years,
+              offering a diverse variety of designs and a wide range of
+              customization options to suit every customer's unique preferences.
+            </Typography>
+          </Grid2>
+          <Grid2 size={12}>
+            <Grid2
+              container
+              spacing={2}
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <InstagramIcon
+                fontSize="large"
+                sx={{
+                  bgcolor: "#fff",
+                  color: "#777777",
+                  borderRadius: 2,
+                  ":hover": {
+                    bgcolor: "#c29958",
+                    color: "#fff",
+                  },
+                }}
+              />
+              <YouTubeIcon
+                fontSize="large"
+                sx={{
+                  bgcolor: "#fff",
+                  color: "#777777",
+                  borderRadius: 2,
+                  ":hover": {
+                    bgcolor: "#c29958",
+                    color: "#fff",
+                  },
+                }}
+              />
+              <WhatsAppIcon
+                fontSize="large"
+                sx={{
+                  bgcolor: "#fff",
+                  color: "#777777",
+                  borderRadius: 2,
+                  ":hover": {
+                    bgcolor: "#c29958",
+                    color: "#fff",
+                  },
+                }}
+              />
+            </Grid2>
           </Grid2>
         </Grid2>
 
-        <Grid2 size={{ xs: 12, md: 4 }}>
-          <Typography
-            variant="body1"
-            align="center"
-            sx={{ marginBottom: 2, fontWeight: "bold" }}
-          >
-            COLLOCTION
-          </Typography>
-          <Grid2 container spacing={0.5} direction="column">
+        <Grid2
+          container
+          spacing={0.5}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          size={{ xs: 12, md: 4 }}
+        >
+          <Grid2 size={12}>
+            <Typography
+              variant="body1"
+              align="center"
+              sx={{ marginBottom: 2, fontWeight: "bold" }}
+            >
+              COLLECTIONS
+            </Typography>
+          </Grid2>
+          <Grid2 size={12} container spacing={0.5} direction="column">
             {collections.map((collection) => (
               <Typography variant="caption" align="center" key={collection}>
                 {collection}
@@ -99,21 +115,24 @@ const Footer: React.FC = () => {
           </Grid2>
         </Grid2>
 
-        <Grid2 size={{ xs: 12, md: 4 }}>
-          <Typography
-            variant="body1"
-            align="center"
-            sx={{ marginBottom: 2, fontWeight: "bold" }}
-          >
-            FIND US
-          </Typography>
-          <Grid2
-            container
-            spacing={0.5}
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          >
+        <Grid2
+          container
+          spacing={0.5}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          size={{ xs: 12, md: 4 }}
+        >
+          <Grid2 size={12}>
+            <Typography
+              variant="body1"
+              align="center"
+              sx={{ marginBottom: 2, fontWeight: "bold" }}
+            >
+              FIND US
+            </Typography>
+          </Grid2>
+          <Grid2 size={12}>
             <Typography
               variant="body2"
               align="center"
@@ -126,6 +145,8 @@ const Footer: React.FC = () => {
               8-6-117/5/NR, Nagarjuna Sagar Rd, beside Nagarjuna colony, Arch,
               Hastinapuram, Hyderabad, Telangana 500079
             </Typography>
+          </Grid2>
+          <Grid2 size={12}>
             <Typography variant="body2" align="center">
               <EmailOutlinedIcon
                 fontSize="small"
@@ -133,6 +154,8 @@ const Footer: React.FC = () => {
               />{" "}
               svrj@gmail.com
             </Typography>
+          </Grid2>
+          <Grid2 size={12}>
             <Typography variant="body2" align="center">
               <LocalPhoneOutlinedIcon
                 fontSize="small"
