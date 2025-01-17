@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           spacing={0.5}
         >
           <img
-            src="src/assets/images/logoName.png"
+            src="assets/images/logoName.png"
             alt="Company logo"
             style={{ maxWidth: "100%", height: "auto", marginBottom: "16px" }}
           />

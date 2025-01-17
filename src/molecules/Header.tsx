@@ -67,7 +67,7 @@ const Header: React.FC<headerPost> = ({ currentPage }) => {
               alignItems: "right",
             }}
           >
-            <Avatar alt="Logo" src="src/assets/images/logo.png" />
+            <Avatar alt="Logo" src="assets/images/logo.png" />
           </Grid2>
           <Grid2 size={11}>
             <Typography variant="h4" color="#c29958" align="center">

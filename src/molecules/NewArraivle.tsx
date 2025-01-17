@@ -44,7 +44,7 @@ const NewArraival: React.FC = () => {
       >
         <img
           alt="new arrival"
-          src="src/assets/images/psv1tilit.jpg"
+          src="assets/images/psv1tilit.jpg"
           style={{
             height: "100%",
             width: "100%",
