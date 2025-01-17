@@ -42,7 +42,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/SriVenkatramaJewellers">
         <Routes>
           <Route path={navHomeURL} element={<HomePage />} />
           <Route path={navContactUsURL} element={<ContactUS />} />
