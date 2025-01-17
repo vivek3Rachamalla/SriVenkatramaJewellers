@@ -79,7 +79,14 @@ const DesignDetails: React.FC = () => {
       <Grid2 size={12}>
         {detailsBottm.map(({ primary, secondary }) => (
           <ListItem>
-            <ListItemText primary={primary} secondary={secondary} />
+            <ListItemText
+              primary={primary}
+              secondary={secondary}
+              sx={{
+                "& .MuiListItemText-primary": { color: "#000000" },
+                "& .MuiListItemText-secondary": { color: "#000000" },
+              }}
+            />
           </ListItem>
         ))}
       </Grid2>
