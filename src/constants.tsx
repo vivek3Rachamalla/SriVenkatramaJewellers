@@ -3,7 +3,7 @@ export const navContactUs = "Contact Us";
 export const navAboutUs = "About Us";
 export const navOurCollection = "Our Collection";
 
-export const navHomeURL = "/";
+export const navHomeURL = "/SriVenkatramaJewellers/#/";
 export const navContactUsURL = "/SriVenkatramaJewellers/#/contact";
 export const navAboutUsURL = "/SriVenkatramaJewellers/#/about";
 export const navOurCollectionURL = "/SriVenkatramaJewellers/#/collection";
