@@ -11,10 +11,10 @@ export const navOurCollection = "Our Collection";
 export const navOurCollectionURL = "/collection";
 
 export const navItems = [
-  { name: navHome, url: navHomeURL },
-  { name: navContactUs, url: navContactUsURL },
-  { name: navAboutUs, url: navAboutUsURL },
-  { name: navOurCollection, url: navOurCollectionURL },
+  { name: navHome, url: "/" },
+  { name: navContactUs, url: "/SriVenkatramaJewellers/contact" },
+  { name: navAboutUs, url: "/SriVenkatramaJewellers/about" },
+  { name: navOurCollection, url: "/SriVenkatramaJewellers/collection" },
 ];
 
 export const catlogList = [
