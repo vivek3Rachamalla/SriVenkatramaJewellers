@@ -1,6 +1,5 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { navHomeURL } from "./constants";
 import HomePage from "./pages/HomePage";
 import ContactUS from "./pages/ContactUS";
 import AboutUS from "./pages/AboutUS";
@@ -29,7 +28,7 @@ const theme = createTheme({
     },
     text: {
       secondary: "#fff",
-      gold: "#ffffff",
+      gold: "#c29958",
     },
   },
 });
@@ -40,7 +39,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <Routes>
-          <Route path={navHomeURL} element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/contact" element={<ContactUS />} />
           <Route path="/about" element={<AboutUS />} />
           <Route path="/collection" element={<Collection />} />
