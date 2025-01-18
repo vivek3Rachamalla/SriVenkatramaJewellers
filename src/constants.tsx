@@ -1,20 +1,18 @@
 export const navHome = "Home";
-export const navHomeURL = "/";
-
 export const navContactUs = "Contact Us";
-export const navContactUsURL = "/contact";
-
 export const navAboutUs = "About Us";
-export const navAboutUsURL = "/about";
-
 export const navOurCollection = "Our Collection";
-export const navOurCollectionURL = "/collection";
+
+export const navHomeURL = "/";
+export const navContactUsURL = "/SriVenkatramaJewellers/#/contact";
+export const navAboutUsURL = "/SriVenkatramaJewellers/#/about";
+export const navOurCollectionURL = "/SriVenkatramaJewellers/#/collection";
 
 export const navItems = [
-  { name: navHome, url: "/" },
-  { name: navContactUs, url: "/SriVenkatramaJewellers/contact" },
-  { name: navAboutUs, url: "/SriVenkatramaJewellers/about" },
-  { name: navOurCollection, url: "/SriVenkatramaJewellers/collection" },
+  { name: navHome, url: navHomeURL },
+  { name: navContactUs, url: navContactUsURL },
+  { name: navAboutUs, url: navAboutUsURL },
+  { name: navOurCollection, url: navOurCollectionURL },
 ];
 
 export const catlogList = [
