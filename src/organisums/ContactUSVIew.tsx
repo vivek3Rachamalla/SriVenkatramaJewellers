@@ -13,7 +13,7 @@ const contactItems = [
     title: "WhatsApp",
     description: "Send us your queries on WhatsApp for a quick reply",
     linkText: "START CHATTING",
-    linkHref: "",
+    link: "",
   },
   {
     icon: <LocationOnOutlinedIcon fontSize="large" />,
@@ -21,7 +21,7 @@ const contactItems = [
     description:
       "Find us at our office location for in-person support and consultations.",
     linkText: "Get Directions",
-    linkHref: "",
+    link: "https://maps.app.goo.gl/r83z66k2Tq2WCkrT7",
   },
   {
     icon: <LocalPhoneOutlinedIcon fontSize="large" />,
@@ -29,14 +29,14 @@ const contactItems = [
     description:
       "Call us for immediate assistance or support. We're here to help!",
     linkText: "Call Now",
-    linkHref: "",
+    link: "",
   },
   {
     icon: <EmailOutlinedIcon fontSize="large" />,
     title: "Email",
     description: "Send us your queries via email for more detailed responses.",
     linkText: "Send Email",
-    linkHref: "",
+    link: "mailto:svrj@gmail.com",
   },
   {
     icon: <InstagramIcon fontSize="large" />,
@@ -44,7 +44,7 @@ const contactItems = [
     description:
       "Follow us on Instagram for the latest updates and exclusive content.",
     linkText: "Follow Us",
-    linkHref: "",
+    link: "https://www.instagram.com/svr_jewels",
   },
   {
     icon: <YouTubeIcon fontSize="large" />,
@@ -52,15 +52,15 @@ const contactItems = [
     description:
       "Subscribe to our YouTube channel for informative videos and tutorials.",
     linkText: "Subscribe Now",
-    linkHref: "",
+    link: "https://www.youtube.com/@svr_jewels",
   },
 ];
 
 const ContactUSView: React.FC = () => {
   return (
     <Grid2 container spacing={2} sx={{ margin: 2 }}>
-      {contactItems.map(({ icon, title, description, linkText, linkHref }) => (
-        <Grid2 size={4} key={title}>
+      {contactItems.map(({ icon, title, description, linkText, link }) => (
+        <Grid2 size={4} key={title} onClick={() => window.open(link)}>
           <Box
             sx={{
               background: "#f5f5f5",
@@ -71,6 +71,12 @@ const ContactUSView: React.FC = () => {
               alignItems: "center",
               justifyContent: "space-between",
               gap: 2,
+              margin: "2px",
+              "&:hover": {
+                color: "#c29958",
+                border: "2px solid #3e0e02",
+                margin: "0px",
+              },
             }}
           >
             {icon}
@@ -83,11 +89,9 @@ const ContactUSView: React.FC = () => {
             >
               {description}
             </Typography>
-            {linkText && (
-              <Link href={linkHref} variant="caption" color="inherit">
-                {linkText}
-              </Link>
-            )}
+            <Link variant="caption" color="inherit">
+              {linkText}
+            </Link>
           </Box>
         </Grid2>
       ))}

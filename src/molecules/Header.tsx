@@ -17,7 +17,6 @@ const Header: React.FC<headerPost> = ({ currentPage }) => {
           size={12}
           sx={{
             background: "#651a08",
-            paddingX: 2,
             borderBottom: "2px solid #3e0e02",
             overflowX: "hidden",
           }}
@@ -71,7 +70,7 @@ const Header: React.FC<headerPost> = ({ currentPage }) => {
           </Grid2>
           <Grid2 size={11}>
             <Typography variant="h4" color="#c29958" align="center">
-              SRI VENKATRAMANA JEWELLERS
+              SRI VENKATARAMANA JEWELLERS
             </Typography>
           </Grid2>
         </Grid2>

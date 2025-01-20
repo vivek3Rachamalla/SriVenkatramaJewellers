@@ -4,6 +4,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import { Grid2, Box, Typography } from "@mui/material";
 
 const collections = [
@@ -25,7 +26,7 @@ const Footer: React.FC = () => {
           direction="row"
           justifyContent="center"
           alignItems="center"
-          size={{ xs: 12, md: 4 }}
+          size={{ xs: 12, sm: 4 }}
         >
           <Grid2 size={12}>
             <img
@@ -50,6 +51,9 @@ const Footer: React.FC = () => {
               alignItems="center"
             >
               <InstagramIcon
+                onClick={() =>
+                  window.open("https://www.instagram.com/svr_jewels")
+                }
                 fontSize="large"
                 sx={{
                   bgcolor: "#fff",
@@ -62,6 +66,9 @@ const Footer: React.FC = () => {
                 }}
               />
               <YouTubeIcon
+                onClick={() =>
+                  window.open("https://www.youtube.com/@svr_jewels")
+                }
                 fontSize="large"
                 sx={{
                   bgcolor: "#fff",
@@ -85,6 +92,23 @@ const Footer: React.FC = () => {
                   },
                 }}
               />
+              <FacebookOutlinedIcon
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/people/Sri-Venkataramana-Jewellers/61569839144053/"
+                  )
+                }
+                fontSize="large"
+                sx={{
+                  bgcolor: "#fff",
+                  color: "#777777",
+                  borderRadius: 2,
+                  ":hover": {
+                    bgcolor: "#c29958",
+                    color: "#fff",
+                  },
+                }}
+              />
             </Grid2>
           </Grid2>
         </Grid2>
@@ -95,7 +119,7 @@ const Footer: React.FC = () => {
           direction="row"
           justifyContent="center"
           alignItems="center"
-          size={{ xs: 12, md: 4 }}
+          size={{ xs: 12, sm: 4 }}
         >
           <Grid2 size={12}>
             <Typography
@@ -121,7 +145,7 @@ const Footer: React.FC = () => {
           direction="row"
           justifyContent="center"
           alignItems="center"
-          size={{ xs: 12, md: 4 }}
+          size={{ xs: 12, sm: 4 }}
         >
           <Grid2 size={12}>
             <Typography
@@ -132,7 +156,23 @@ const Footer: React.FC = () => {
               FIND US
             </Typography>
           </Grid2>
-          <Grid2 size={12}>
+          <Grid2
+            size={12}
+            onClick={() =>
+              window.open("https://maps.app.goo.gl/r83z66k2Tq2WCkrT7")
+            }
+            sx={{
+              cursor: "pointer",
+              "&:hover": {
+                bgcolor: "#ffffff",
+                color: "#c29958",
+                border: "2px solid #3e0e02",
+                borderRadius: 2,
+                transition: "all 0.3s ease",
+                transform: "scale(1.05)",
+              },
+            }}
+          >
             <Typography
               variant="body2"
               align="center"
@@ -146,7 +186,23 @@ const Footer: React.FC = () => {
               Hastinapuram, Hyderabad, Telangana 500079
             </Typography>
           </Grid2>
-          <Grid2 size={12}>
+          <Grid2
+            size={12}
+            onClick={() => {
+              window.location.href = "mailto:svrj@gmail.com";
+            }}
+            sx={{
+              cursor: "pointer",
+              "&:hover": {
+                bgcolor: "#ffffff",
+                color: "#c29958",
+                border: "2px solid #3e0e02",
+                borderRadius: 2,
+                transition: "all 0.3s ease",
+                transform: "scale(1.05)",
+              },
+            }}
+          >
             <Typography variant="body2" align="center">
               <EmailOutlinedIcon
                 fontSize="small"

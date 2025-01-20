@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vivek3Rachamalla.github.io/SriVenkatramaJewellers/",
+  "homepage": "https://srivenkataramanajewellers.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

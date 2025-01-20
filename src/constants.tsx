@@ -3,10 +3,10 @@ export const navContactUs = "Contact Us";
 export const navAboutUs = "About Us";
 export const navOurCollection = "Our Collection";
 
-export const navHomeURL = "/SriVenkatramaJewellers/#/home";
-export const navContactUsURL = "/SriVenkatramaJewellers/#/contact";
-export const navAboutUsURL = "/SriVenkatramaJewellers/#/about";
-export const navOurCollectionURL = "/SriVenkatramaJewellers/#/collection";
+export const navHomeURL = "/#/home";
+export const navContactUsURL = "/#/contact";
+export const navAboutUsURL = "/#/about";
+export const navOurCollectionURL = "/#/collection";
 
 export const navItems = [
   { name: navHome, url: navHomeURL },
